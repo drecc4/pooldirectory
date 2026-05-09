@@ -1,0 +1,9 @@
+# Pool Pals Streamlit app — pinned dependencies
+#
+# Streamlit 1.40+ is required for st.column_config NumberColumn formatting
+# used in the breakdown tables.
+
+streamlit>=1.40,<2.0
+pandas>=2.1,<3.0
+plotly>=5.18,<6.0
+folium>=0.15,<1.0
