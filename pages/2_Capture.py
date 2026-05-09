@@ -30,7 +30,7 @@ st.set_page_config(
     page_title="Pool Pals · Capture",
     page_icon="🌊",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="collapsed",
 )
 apply_global_styling()
 
