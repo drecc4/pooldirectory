@@ -595,10 +595,10 @@ def render_neighborhood_cards(scope: pd.DataFrame):
         marked = yes + no
         cards.append({
             "name": nbhd,
-            "total homes": total,
-            "marked homes": marked,
+            "total": total,
+            "marked": marked,
             "marked_pct": (marked / total * 100) if total else 0,
-            "homes with pools": yes,
+            "pools": yes,
             "pool_pct": (yes / total * 100) if total else 0,
         })
  
@@ -611,11 +611,11 @@ def render_neighborhood_cards(scope: pd.DataFrame):
 <div class="nbhd-card">
     <div class="nbhd-card-title">{c["name"]}</div>
     <div class="nbhd-card-grid">
-        <div class="nbhd-card-label">Total</div>
+        <div class="nbhd-card-label">Total Homes</div>
         <div class="nbhd-card-value">{c["total"]:,}</div>
-        <div class="nbhd-card-label">Marked</div>
+        <div class="nbhd-card-label">Marked Homes</div>
         <div class="nbhd-card-value">{c["marked"]:,} <span style="color:#a8a29e;">({c["marked_pct"]:.0f}%)</span></div>
-        <div class="nbhd-card-label">Pools</div>
+        <div class="nbhd-card-label">Pool Homes</div>
         <div class="nbhd-card-value">{c["pools"]:,}</div>
         <div class="nbhd-card-label">Pool %</div>
         <div class="nbhd-card-value nbhd-card-poolrate">{c["pool_pct"]:.1f}%</div>
