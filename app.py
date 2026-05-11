@@ -17,10 +17,10 @@ from shared import (
     init_state,
     load_dataset,
     render_family_breakdown,
+    render_neighborhood_cards,
     render_overview_kpis,
     render_property_table,
     render_status_map,
-    render_transposed_neighborhood_breakdown,
 )
 
 st.set_page_config(
@@ -77,7 +77,6 @@ with map_col:
     render_status_map(scope, height=520, tiles=map_style)
 
 with summary_col:
-    st.write(f'##### {group} · Snapshot')
     render_transposed_neighborhood_breakdown(scope)
 
 # === Property-level detail ===
