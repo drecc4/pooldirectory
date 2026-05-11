@@ -595,10 +595,10 @@ def render_neighborhood_cards(scope: pd.DataFrame):
         marked = yes + no
         cards.append({
             "name": nbhd,
-            "total": total,
-            "marked": marked,
+            "total homes": total,
+            "marked homes": marked,
             "marked_pct": (marked / total * 100) if total else 0,
-            "pools": yes,
+            "homes with pools": yes,
             "pool_pct": (yes / total * 100) if total else 0,
         })
  
