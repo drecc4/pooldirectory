@@ -77,6 +77,8 @@ with map_col:
     render_status_map(scope, height=520, tiles=map_style)
 
 with summary_col:
+    st.write('')
+    st.write('')
     render_neighborhood_cards(scope)
 
 # === Property-level detail ===
