@@ -79,6 +79,7 @@ with map_col:
 with summary_col:
     st.write('')
     st.write('')
+    st.write('')
     render_neighborhood_cards(scope)
 
 # === Property-level detail ===
